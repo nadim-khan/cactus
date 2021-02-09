@@ -24,4 +24,8 @@ export class MainService {
     return this.http.post(`${this.api}posts/`+data.userId+`/comments`,data.comment);
   }
 
+  getUseryPage(page: number) {
+    return this.http.get(`${this.api}/users?page=`+page);
+  }
+
 }

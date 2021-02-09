@@ -1,6 +1,6 @@
 <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
   <a class="navbar-brand" routerLink="/assignment1">
-    Cactus
+    JSON Validator, Feedback App
   </a>
 
   <button class="navbar-toggler" type="button"
@@ -12,12 +12,21 @@
   <div class="collapse navbar-collapse"
        [ngClass]="{ 'show': navbarOpen }">
     <ul class="navbar-nav mr-auto">
+      
       <li class="nav-item">
-        <a class="nav-link" routerLink="/assignment1" routerlinkActive="active">Assignment 1</a>
+        <div class="dropdown">
+          <button type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown">
+            Dropdown button
+          </button>
+          <div class="dropdown-menu">
+            <a class="dropdown-item" routerLink="/assignment1" routerlinkActive="active">Assignment 1</a>
+            <a class="dropdown-item" routerLink="/assignment2" >Assignment 2</a>
+          </div>
+        </div>
       </li>
-
       <li class="nav-item">
-        <a class="nav-link" routerLink="/assignment2" >Assignment 2</a>
+        
+        <a class="nav-link" routerLink="/users" >All Users</a>
       </li>
     </ul>
   </div>

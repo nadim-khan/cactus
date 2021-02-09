@@ -10,6 +10,7 @@ import { AppComponent } from './app.component';
 import { Asssignment1Component } from './asssignment1/asssignment1.component';
 import { Asssignment2Component } from './asssignment2/asssignment2.component';
 import { CustomhttpInterceptor } from './customhttp.interceptor';
+import { UsersComponent } from './users/users.component';
 
 
 @NgModule({
@@ -17,6 +18,7 @@ import { CustomhttpInterceptor } from './customhttp.interceptor';
     AppComponent,
     Asssignment1Component,
     Asssignment2Component,
+    UsersComponent,
   ],
   imports: [
     BrowserModule,
