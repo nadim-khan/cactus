@@ -4,7 +4,7 @@
             <h3>Input</h3>
             <textarea #ipData class="form-control" (keyup)="clicked=false;" id="exampleFormControlTextarea1" [rows]="rowsVal" [(ngModel)]="input"></textarea>
           </div>
-          <button [disabled]="clicked" id="btnProcess" type="button" class="btn btn-success btn-lg" (click)="getData()">Process</button>
+          <button [disabled]="clicked" id="btnProcess" type="button" class="btn btn-success btn-lg" (click)="getData()" [disabled]="!IsJsonString(input)">Process</button>
     </div>
     <div *ngIf = "output.length" class="col-md-6" id="div3">
         <h3>Output</h3>
